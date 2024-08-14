@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+}
+
+body {
+  overflow: hidden;
+  font-family: 'Rosario', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+main {
+  display: flex;
+}
+/* HEADER SECTION */
+.header-right {
+  background-color: black;
+  color: #fff;
+  width: 70%;
+  height: 8rem;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem 4rem;
+}
+
+.header-right p {
+  font-size: 3rem;
+}
+
+.header-left {
+  width: 30%;
+  height: 8rem;
+  background-color: #d2d3d5;
+  padding-left: 4rem;
+  padding-top: 2rem;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 1rem;
+  width: 24rem;
+  border: none;
+  border-radius: 1000px;
+  font-family: inherit;
+  font-size: 2.4rem;
+  background-color: #ad6918;
+  color: #fff;
+  display: inline-block;
+  box-shadow: 2px 9px 17px -1px rgba(0, 0, 0, 0.9);
+  transform: translateX(-1%);
+}
+
+.btn:active {
+  transform: translate(-1%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+/* TITLE SECTION */
+.title {
+  width: 100%;
+  height: 15vh;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.title h1 {
+  font-size: 7.4rem;
+  margin-left: 1rem;
+}
+
+.left {
+  width: 30%;
+  background-color: #d2d3d5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left h1 {
+  align-self: flex-end;
+  font-size: 7.4rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  color: black;
+  font-weight: 700;
+}
+
+.devider {
+  width: 100%;
+  height: 8rem;
+  background-color: black;
+}
+/* LEFT SECRETNUMBER/ INPUT SECTION */
+.secret {
+  font-size: 10rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #ad6918;
+  width: 16rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin: 8rem 0 12rem 0;
+  color: #fff;
+  box-shadow: 2px 9px 17px -1px rgba(0, 0, 0, 0.9);
+}
+
+.left input {
+  width: 24rem;
+  height: fit-content;
+  font-size: 10rem;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+  background-color: #d2d3d5;
+  border-radius: 15px;
+  border: 10px solid gray;
+  margin-bottom: 4rem;
+  box-sizing: border-box;
+}
+/* RIGHT SECTION / PHOTO */
+.right {
+  width: 70%;
+  height: 100vh;
+}
+.central {
+  background-image: url(img/light-bulb1.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 27.1rem;
+  background-color: black;
+  color: #fff;
+}
+.central p {
+  align-self: center;
+  justify-self: flex-start;
+  font-size: 4.4rem;
+}
+
+.central img {
+  width: 63%;
+}
+
+.wire-container {
+  width: 60%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 12.8rem;
+  margin-top: 19rem;
+  align-items: flex-end;
+}
+.wire1,
+.wire2,
+.wire3,
+.wire4 {
+  margin-left: 1rem;
+  background-color: rgba(190, 123, 46, 0.75);
+  width: 6rem;
+  height: 1px;
+  border-radius: 15px;
+  /* box-shadow: 1px 4px 91px 77px rgba(173, 105, 24, 0.75); */
+}
+
+.active {
+  box-shadow: -1px -11px 60px 47px rgba(173, 105, 24, 0.9);
+}
+
+/* FOOTER SECTION */
+footer {
+  background-color: black;
+  color: #fff;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+footer p {
+  font-size: 4rem;
+  margin-right: 15rem;
+}
+
+.label-score {
+  margin-left: 10rem;
+}
+
+/* MEDIA SMALLER LAPTOPS */
+@media (max-width: 85.4em) {
+  .secret {
+    margin-bottom: 3rem;
+  }
+  .central {
+    gap: 22rem;
+  }
+  .wire-container {
+    width: 60%;
+    gap: 11rem;
+  }
+  .left input {
+    width: 20rem;
+    font-size: 6rem;
+  }
+  .wire1,
+  .wire2,
+  .wire3,
+  .wire4 {
+    width: 4rem;
+  }
+}

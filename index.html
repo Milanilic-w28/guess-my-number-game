@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rosario:ital,wght@1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess My Number</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <button class="btn restart">RESTART!</button>
+      </div>
+
+      <div class="header-right">
+        <p class="between">Choose between 1 and 20</p>
+      </div>
+    </header>
+    <main>
+      <section class="left">
+        <h1>Guess</h1>
+        <div class="devider"></div>
+        <div class="number secret">?</div>
+        <input type="number" class="guess" />
+        <button class="btn check">CHECK !</button>
+      </section>
+      <section class="right">
+        <div class="title">
+          <h1>My Number</h1>
+        </div>
+
+        <div class="central">
+          <div class="wire-container">
+            <div class="wire1"></div>
+            <div class="wire2"></div>
+            <div class="wire3"></div>
+            <div class="wire4"></div>
+          </div>
+
+          <p class="message">Start guessing...</p>
+        </div>
+
+        <footer>
+          <p class="label-score">Score: <span class="score">20</span></p>
+          <p class="label-highscore">
+            Highscore: <span class="highscore">0</span>
+          </p>
+        </footer>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
