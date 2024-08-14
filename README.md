@@ -27,3 +27,6 @@
 - JavaScript
 
 👉 [Getting Started](https://milanilic-w28.github.io/guess-my-number-game/)
+
+## Screenshot
+![GuessMyNumber](img/GuessMyNumber.png)
